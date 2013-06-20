@@ -177,5 +177,3 @@ function foundation_shortcode_section( $atts, $content = null ) {
 }
 
 add_shortcode( 'section', 'foundation_shortcode_section' );
-
-?>
