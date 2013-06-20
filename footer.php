@@ -10,24 +10,17 @@
  */
 ?>
 
-</div>
-<!-- End Page -->
+  </div> <?php // end .row; opened in header.php ?>
+</div> <?php // end .outer-wrap; opened in header.php ?>
 
-<!-- Footer -->
-<footer class="row">
-
-<?php if ( dynamic_sidebar('Sidebar Footer One') || dynamic_sidebar('Sidebar Footer Two') || dynamic_sidebar('Sidebar Footer Three') || dynamic_sidebar('Sidebar Footer Four')  ) : else : ?>
-
-<div class="large-12 columns">
-	<ul class="inline-list">
-	<?php wp_list_pages('title_li='); ?>
-	</ul>
-</div>
-
-<?php endif; ?>
-
+<footer class="site-footer">
+  <div class="row"><?php 
+    dynamic_sidebar('Sidebar Footer One');
+    dynamic_sidebar('Sidebar Footer Two');
+    dynamic_sidebar('Sidebar Footer Three');
+    dynamic_sidebar('Sidebar Footer Four');
+  ?></div>
 </footer>
-<!-- End Footer -->
 
 <?php wp_footer(); ?>
 

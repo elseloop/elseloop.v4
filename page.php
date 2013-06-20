@@ -9,21 +9,20 @@
  * @since Foundation, for WordPress 4.0
  */
 
-get_header(); ?>
+get_header();
 
-    <!-- Main Content -->
-    <div class="large-9 columns" role="main">
+    ?><div role="main" class="row post-wrap"><?php
 
-		<?php if ( have_posts() ) : ?>
+      if ( have_posts() ) :
 
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'page' ); ?>
-			<?php endwhile; ?>
-			
-		<?php endif; ?>
+        while ( have_posts() ) : the_post();
+          
+          get_template_part( 'content', 'page' );
+        
+        endwhile;
 
-    </div>
-    <!-- End Main Content -->
+      endif;
 
-<?php get_sidebar(); ?>
-<?php get_footer(); ?>
+    ?></div><?php
+
+get_footer();
