@@ -3,7 +3,7 @@
 /* ==========================================================================
    TYPEKIT
    ========================================================================== */
-// define('TYPEKIT_ID', 'xxxxxxx'); // xxxxxxx
+define('TYPEKIT_ID', ''); // xxxxxxx
 
 function needmore_typekit() {
   
@@ -26,7 +26,7 @@ if (TYPEKIT_ID) {
 /* ==========================================================================
    GOOGLE ANALYTICS
    ========================================================================== */
-//define('GOOGLE_ANALYTICS_ID', 'UA-XXXXX-Y'); // UA-XXXXX-Y
+define('GOOGLE_ANALYTICS_ID', ''); // UA-XXXXX-Y
 
 function nm_google_analytics() { 
   ?><script>
