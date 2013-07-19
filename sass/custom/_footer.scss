@@ -1,0 +1,16 @@
+.site-footer {
+  @include clearfix();
+  padding: 2em 0;
+  height: auto;
+  width: 100%;
+  
+  // to make it less jarring when StickFooter.js moves it on pageload
+  opacity: 0;
+  
+  // fallback for no-js and callback for StickyFooter.js
+  .loaded &,
+  .no-js & {
+    opacity: 1;
+  }
+
+}
