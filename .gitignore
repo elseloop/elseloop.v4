@@ -9,3 +9,6 @@ Thumbs.db
 
 # sass-cache
 .sass-cache
+
+# exclude compiled css
+css/app.css
