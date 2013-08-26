@@ -49,7 +49,7 @@ endif;
 // Add class to navigation sub-menu
 class foundation_navigation extends Walker_Nav_Menu {
 
-function start_lvl(&$output, $depth) {
+function start_lvl(&$output, $depth=0, $args=array()) {
   $indent = str_repeat("\t", $depth);
   $output .= "\n$indent<ul class=\"dropdown\">\n";
 }
