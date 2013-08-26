@@ -7,7 +7,8 @@ function nm_is_child( $id ) {
     $this_post    = get_page( $id );
     $parent_pg    = $this_post->post_parent;
     $post_type    = get_post_type( $id );
-    $anc          = end( get_ancestors( $id, $post_type ) );
+    $ancestors    = get_ancestors( $id, $post_type );
+    $anc          = end( $ancestors );
     
     if ( 0 != $parent_pg && $parent_pg == $anc )
       return true;
