@@ -1,0 +1,9 @@
+// additional mixins
+
+// media query mixin with IE8 fallbacks for desktop styles
+@mixin respond-to($width) {
+  @media screen and (min-width: $width) {
+    @content;
+  }
+  .lt-ie9 & { @content; }
+}

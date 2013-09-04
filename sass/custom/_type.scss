@@ -1,0 +1,11 @@
+// type overrides
+
+%unstyled {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.unstyled {
+  @extend %unstyled;
+}

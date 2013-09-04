@@ -21,7 +21,7 @@ function nm_theme_init() {
 
   // Automatic Feed Links & Post Formats
   add_theme_support( 'automatic-feed-links' );
-  //add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status' ) );
+  add_theme_support( 'post-formats', array( 'aside', 'image', 'link', 'quote', 'status', 'video', 'gallery', 'audio', 'chat' ) );
 
   // Custom Background
   add_theme_support( 'custom-background', array(

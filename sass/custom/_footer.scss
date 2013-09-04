@@ -13,4 +13,18 @@
     opacity: 1;
   }
 
+  .footer-inner {
+    @include grid-row();
+    text-align: center;
+    border-top: 1px solid fade-out($body-font-color, .8);
+    padding-top: 2em;
+
+    p {
+      font-size: emCalc(12px);
+      font-family: $el-sans;
+      font-style: italic;
+    }
+
+  }
+
 }

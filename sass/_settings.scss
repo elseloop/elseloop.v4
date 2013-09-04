@@ -29,9 +29,9 @@ $experimental: true;
 $default-float: left;
 
 $body-bg: #fff;
-$body-font-color: #58585b; // for use on white
-$body-font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
-// $body-font-weight: normal;
+$body-font-color: #333; // for use on white
+$body-font-family: "jaf-facitweb", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$body-font-weight: 300;
 // $body-font-style: normal;
 
 // Font-smoothing
@@ -43,11 +43,13 @@ $body-font-family: "proxima-nova", "Helvetica Neue", "Helvetica", Helvetica, Ari
 // $text-direction: ltr;
 
 // Colors
-$primary-color: #4aa388; // main green / start of gradient
-$secondary-color: #114370; // blue / end of gradient
-$alert-color: #952b47; // red
+$primary-color: #fc4b1f; // orange
+$secondary-color: #2a37db; // blue
+$alert-color: #9e1225; // red
 $success-color: $primary-color;
-$hr-color: #e6e7e8; // Light grey
+$hr-color: #ccc; // Light grey
+
+$el-sans: "ff-tisa-web-pro", "Georgia", "Garamond", "Times New Roman", "Times", serif;
 
 // Make sure border radius matches unless we want it different.
 
@@ -89,6 +91,7 @@ $shiny-edge-size: 0 0 0;
 
 // Media Queries
 
+$smaller-screen: 500px;
 $small-screen: 768px;
 // $medium-screen: 1280px;
 // $large-screen: 1440px;
@@ -116,7 +119,7 @@ $retina: "print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-rat
 // Grid Variables
 //
 
-$row-width: emCalc(1000px);
+$row-width: emCalc(1200px);
 // $column-gutter: emCalc(30px);
 // $total-columns: 12;
 
@@ -139,18 +142,18 @@ $row-width: emCalc(1000px);
 
 // Heading font styles
 
-// $header-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: $el-sans;
 $header-font-weight: normal;
 // $header-font-style: normal;
 $header-font-color:     $body-font-color;
 // $header-line-height: 1.4;
-// $header-top-margin: .2em;
+$header-top-margin: 0;
 // $header-bottom-margin: .5em;
 // $header-text-rendering: optimizeLegibility;
 
 // Heading font sizes
 $h1-font-size: emCalc(55px); // 55 px Main Titles 
-$h2-font-size: emCalc(38px); // 38 px is the Blog Titles 
+$h2-font-size: emCalc(42px); // 38 px is the Blog Titles 
 $h3-font-size: emCalc(24px); // 24 px is the Animation caption sizes
 $h4-font-size: emCalc(18px); // 19 px is the all UPPERCASE body Titles
 // $h5-font-size: emCalc(18px);

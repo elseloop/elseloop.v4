@@ -22,6 +22,4 @@ require_once locate_template( 'inc/classes.php' );
 require_once locate_template( 'inc/helpers.php' );
 require_once locate_template( 'inc/services.php' );
 require_once locate_template( 'inc/shortcodes.php' );
-
-// adds theme support for WooCommerce & some commonly needed hooks & filters
-// require_once locate_template( 'inc/woocommerce.php' );
+require_once locate_template( 'inc/blog.php' );
